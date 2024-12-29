@@ -8,7 +8,9 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
+
 Hava Durumu Uygulaması 
+
 Bu proje, React ile geliştirilmiş, modern bir tasarıma sahip hava durumu uygulamasıdır. Bootstrap kullanılarak tasarlanan kullanıcı arayüzü, sade ve kullanıcı dostudur. Uygulama, verileri LocalStorage'da saklayarak kullanıcı deneyimini geliştirir.
 
 Özellikler
