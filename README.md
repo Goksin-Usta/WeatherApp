@@ -23,4 +23,5 @@ Bu proje, React ile geliştirilmiş, modern bir tasarıma sahip hava durumu uygu
 ![app_01](https://github.com/user-attachments/assets/39e70f57-7090-4214-b839-d4799eb63a07)
 
 ![app_03](https://github.com/user-attachments/assets/004913fd-0e4b-471a-b082-b35c6d045bd1)
+
 ![app_04](https://github.com/user-attachments/assets/d2999c5d-6a3b-42ce-bf4c-d02c4ea3a120)
