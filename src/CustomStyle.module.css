@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
+* {
+    box-sizing: border-box; /* Tüm elemanlar için kutu modeli */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #e0e0e0;
+    color: #707070;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px; /* Ebeveyn elemanının maksimum genişliği */
+    margin: 0 auto; /* Ortalamak için */
+}
+
+.title {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.form-rounded {
+    border-radius: 2em;
+}
+
+.back-card {
+    width: 80vw; /* Görünüm alanının %80'ini kullan */
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 400px;
+    margin: 0 auto; /* Kartı ortalamak için */
+    background-color: #fff; /* Kart arka plan rengi */
+    border-radius: 20px; /* Kart köşelerini yuvarlatmak için */
+    padding: 20px; /* Kart içine padding ekledim */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.city-name {
+    position: absolute;
+    width: 100%;
+    top: 10%; /* Üstten %10'ye yerleştir */
+    left: 50%; /* Soldan %50'ye yerleştir */
+    transform: translate(-50%, -50%); /* Ortalamak için kendini yarı boyut kadar kaydır */
+    text-align: center; /* İçeriği yatay olarak ortala */
+}
+
+.city-name-p {
+    font-size: 20px; /* Sabit font boyutu */
+    white-space: nowrap; /* Uzun metinler tek satırda kalsın */
+    overflow: hidden; /* Taşan metinleri gizle */
+    text-overflow: ellipsis; /* Taşan metinlere üç nokta ekle */
+}
+
+.city-name-span {
+    font-weight: 400;
+    font-size: 36pt;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: -60px;
+}
+
+.temp-span {
+    font-weight: 100;
+    font-size: 3em;
+    letter-spacing: -5px;
+    white-space: nowrap;
+}
+
+.card-mid {
+    display: flex;
+    justify-content: space-between; /* Elemanları iki yana yasla */
+    align-items: center; /* Vertikal hizalama */
+    margin-bottom: 10px;
+}
+
+.condition, .high, .low {
+    line-height: 1em;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: capitalize;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.high::before {
+    content: '';
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.low::before {
+    content: '';
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.icon-container {
+    border-radius: 100%;
+    width: 150px; /* Boyutu artırdım */
+    height: 150px; /* Boyutu artırdım */
+    background: #ddd8d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto; /* Dış boşluk ekledim */
+    padding: 5px; /* İç boşluk ekledim */
+}
+
+.icon-container-img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.card-bottom {
+    display: flex; /* Flex düzeni */
+    justify-content: space-between; /* İçeriği yayarak hizala */
+    align-items: center; /* İçeriği ortala */
+    line-height: 1.5;
+}
+
+.card-bottom-span {
+    font-size: 16px;
+    color: #707070; /* Yazı rengini biraz koyulaştırdım */
+}
+
+.card-bottom-p {
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: -2px;
+    color: #333; /* Yazı rengini daha koyu yaptım */
+}
+
+/* Mobil uyumlu düzenlemeler */
+@media (max-width: 768px) {
+    .back-card {
+        width: 95vw; /* Görünüm alanının %95'ini kullan */
+        min-width: 250px;
+        max-width: 350px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .back-card {
+        width: 100%;  /* Tam genişlik */
+        min-width: 270px;
+    }
+
+    .temp-span {
+        font-size: 2rem; /* Daha küçük font boyutu */
+    }
+
+    .card-bottom-p {
+        font-size: 30px; /* Daha küçük yazı boyutu */
+    }
+
+    .card-bottom-span {
+        font-size: 14px;
+    }
+}
