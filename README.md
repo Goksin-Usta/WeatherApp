@@ -15,9 +15,13 @@ Bu proje, React ile geliştirilmiş, modern bir tasarıma sahip hava durumu uygu
 
 Özellikler
  Anlık Hava Durumu: Girilen şehir için hava durumu bilgilerini görüntüleme.
+ 
  Veri Saklama: Kullanıcı tarafından aranan şehir bilgilerini LocalStorage'da saklama.
+ 
  Modern Tasarım: Bootstrap ile şık ve duyarlı kullanıcı arayüzü.
+ 
  Otomatik Güncelleme: Yeni şehir aramalarında dinamik içerik güncellenmesi.
+ 
 
  
 ![app_01](https://github.com/user-attachments/assets/39e70f57-7090-4214-b839-d4799eb63a07)
